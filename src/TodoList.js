@@ -1,6 +1,6 @@
 function TodoList({ children }) {
     return (
-    <ul>
+    <ul className="m-0 pb-14 list-none">
       {children}
     </ul>
     );
