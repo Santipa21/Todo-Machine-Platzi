@@ -1,12 +1,9 @@
 import React from "react";
-import { useEffect } from "react";
 
-function TodoSearch() {
-  const [searchValue, setSearchValue] = React.useState('');
-
-  useEffect(() => {
-    console.log(searchValue);
-  }, [searchValue])
+function TodoSearch({
+  searchValue,
+  setSearchValue,
+}) {
     return (
       <div className="flex items-center justify-center ">
       <div className="relative w-5/6">
