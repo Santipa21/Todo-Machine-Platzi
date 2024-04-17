@@ -11,6 +11,7 @@ const defaultTodos = [
   {text: 'Trabajar', completed: true},
   {text: 'Estudiar', completed: false},
   {text: 'Almorzar', completed: true},
+  {text: 'Dormir', completed: false},
 ];
 
 function App() {
