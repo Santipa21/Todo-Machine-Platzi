@@ -6,7 +6,7 @@ function TodoSearch({
 }) {
     return (
       <div className="flex items-center justify-center ">
-      <div className="relative w-5/6">
+      <div className="relative w-3/6">
         <input
         value={searchValue}
         onChange={
