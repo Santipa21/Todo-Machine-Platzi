@@ -1,8 +1,8 @@
-function TodoItem() {
+function TodoItem({ text }) {
     return (
       <li>
         <span>V</span>
-        <p>Desayunar</p>
+        <p>{text}</p>
         <span>x</span>
       </li>
     );
