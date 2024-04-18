@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Todo-Machine-Platzi/static/css/main.e6c13ad2.css",
+    "main.js": "/Todo-Machine-Platzi/static/js/main.ed21eb18.js",
+    "index.html": "/Todo-Machine-Platzi/index.html",
+    "main.e6c13ad2.css.map": "/Todo-Machine-Platzi/static/css/main.e6c13ad2.css.map",
+    "main.ed21eb18.js.map": "/Todo-Machine-Platzi/static/js/main.ed21eb18.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.ed21eb18.js"
+  ]
+}
