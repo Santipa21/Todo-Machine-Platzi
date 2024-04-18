@@ -2,7 +2,7 @@ import React from "react";
 
 function EmptyTodos() {
     return (
-    <p>Crea tu primer TODO!</p>
+    <p className="mt-4 text-center">Create your first TODO!</p>
     );
   }
 

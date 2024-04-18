@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useLocalStorage } from "./useLocalStorage";
 
 const TodoContext = React.createContext();
@@ -12,6 +12,8 @@ function TodoProvider({ children }) {
         error
     } = useLocalStorage('TODOS_V1', []);
     const [searchValue, setSearchValue] = React.useState('');
+    const [openModal, setOpenModal] = React.useState(false);
+
     const completedTodos = todos.filter(todo => !!todo.completed).length;
     const totalTodos = todos.length;
     const searchedTodos = todos.filter(
@@ -22,9 +24,14 @@ function TodoProvider({ children }) {
         }
     );
 
-    useEffect(() => {
-        console.log(searchValue);
-    }, [searchValue]);
+   const addTodo = (text) => {
+    const newTodos = [...todos];
+    newTodos.push({
+        text,
+        completed: false,
+    });
+    saveTodos(newTodos);
+   };
 
     const completeTodo = (text) => {
         const newTodos = [...todos];
@@ -55,6 +62,9 @@ function TodoProvider({ children }) {
             searchedTodos,
             completeTodo,
             deleteTodo,
+            openModal,
+            setOpenModal,
+            addTodo,
         }}>
             {children}
         </TodoContext.Provider>

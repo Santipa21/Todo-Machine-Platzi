@@ -1,14 +1,13 @@
-function CreateTodoButton() {
+function CreateTodoButton({ setOpenModal }) {
     return (
       <button
       onClick={
-        (event) => {
-          console.log('Lo tocaste');
-         
+        () => {
+          setOpenModal(state => !state)
         }
       }
       title="Add New"
-      className="group cursor-pointer outline-none hover:rotate-90 duration-300 fixed bottom-[24px] right-[24px] flex justify-center items-center"
+      className=" z-10 group cursor-pointer outline-none hover:rotate-90 duration-300 fixed bottom-[24px] right-[24px] flex justify-center items-center"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
