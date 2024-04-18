@@ -1,9 +1,12 @@
 import React from "react";
+import { TodoContext } from "../TodoContext";
 
-function TodoSearch({
-  searchValue,
-  setSearchValue,
-}) {
+
+function TodoSearch() {
+  const {
+    searchValue,
+    setSearchValue,
+  } = React.useContext(TodoContext);
     return (
       <div className="flex items-center justify-center ">
       <div className="relative w-3/6">
