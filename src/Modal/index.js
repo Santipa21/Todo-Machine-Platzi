@@ -3,7 +3,7 @@ import  ReactDOM  from "react-dom";
 
 function Modal({ children }) {
     return ReactDOM.createPortal(
-        <div className="flex justify-center items-center fixed top-0 right-0 bottom-0 left-0">
+        <div className="flex justify-center items-center fixed top-0 right-0 bottom-0 left-0 bg-[#222248] bg-opacity-80">
             {children}
         </div>,
         document.getElementById('modal')
